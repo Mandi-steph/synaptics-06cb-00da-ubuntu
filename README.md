@@ -37,6 +37,8 @@ fprintd-verify
 sudo pam-auth-update --enable fprintd
 ```
 
+To add another finger: `fprintd-enroll -f left-index-finger` (see `man fprintd-enroll` for finger names).
+
 Your password keeps working as a fallback. Do **not** copy the Arch-specific PAM files from other guides onto Ubuntu — `pam-auth-update` is the safe way.
 
 ## Uninstall
